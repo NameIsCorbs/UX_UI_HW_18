@@ -1,0 +1,152 @@
+main {
+    background-color: #292929;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #292929;
+  }
+  
+  .img-container {
+    width: 1728px;
+    height: 8000px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-column-gap: 20px;
+  }
+
+  label.logo{
+    width: 23%;
+    color: #1E1E1E;
+    font-family: Imbue;
+    font-size: 40px;
+    font-weight: 400;
+    padding: 10 10px;
+    margin: 10px;
+    font-weight: normal;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    text-align: center;
+  }
+  label.socials{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    color: white;
+    
+    padding: 0px;
+    gap: 19px;
+    position: absolute;
+    width: 242px;
+    height: 50px;
+    left: 250px;
+    top: 73px;
+  }
+  nav{
+    background-color: #292929;
+    background:white;
+    height: 80px;
+    width: 100%;
+    vertical-align: top;
+  }
+  nav ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    width: 25%;
+    float: right;
+    margin-right: 20px;
+    line-height: 20px;
+  }
+  nav ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  nav ul li a{
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 40px;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+  body{
+    background-color: #292929;
+    background:white;
+    height: 80px;
+    width: 100%;
+    vertical-align: top;
+  }
+  body ul{
+    display: flex;
+    justify-content: space-between;
+    margin-right: auto;
+    width: 25%;
+    float: right;
+    margin-right: 20px;
+    line-height: 20px;
+  }
+  body ul li{
+    display: inline-block;
+    line-height: 80px;
+    margin: 0 5px;
+  }
+  body ul li a{
+    text-align: center;
+    color: #1E1E1E;
+    font-size: 17px;
+    padding: 7px 13px;
+    border-radius: 3px;
+  }
+  h1{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 45px;
+    line-height: 61px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em;
+  }
+  h2{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 36px;
+    line-height: 49px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.05em; 
+  }
+  h3{
+    font-family: 'Satoshi';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+    display: flex;
+    align-items: center;
+    text-decoration-line: underline;
+  }
+  p{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    flex-direction: column;
+    font-family: Satoshi;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 40px;
+  }
+  content{
+    width: 500px;
+    margin: 0 auto;
+  }
+  body{
+    display: flex;
+    flex-wrap: wrap;
+  }
