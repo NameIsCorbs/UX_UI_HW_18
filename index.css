@@ -1,152 +1,243 @@
-main {
-    background-color: #292929;
+:root {
+  --primary-color: #292929;
+  --secondary-color: #F4B47C;
+  --text-color: white;
+  --font-primary: 'Satoshi';
+  --font-secondary: 'Imbue';
+  --font-size: 18px;
+  --radius: 8px;
 }
 
-body {
-    margin: 0;
-    padding: 0;
-    background-color: #292929;
-  }
-  
-  .img-container {
-    width: 1728px;
-    height: 8000px;
-    margin: 0 auto;
-    display: grid;
-    grid-template-columns: repeat(12, 1fr);
-    grid-column-gap: 20px;
-  }
+.navbar {
+  box-sizing: border-box;
+  background: #292929;
+  border: 1px solid white;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+  font-family: "Satoshi";
+}
 
-  label.logo{
-    width: 23%;
-    color: #1E1E1E;
-    font-family: Imbue;
-    font-size: 40px;
-    font-weight: 400;
-    padding: 10 10px;
-    margin: 10px;
-    font-weight: normal;
-    position: absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
-  }
-  label.socials{
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    color: white;
-    
-    padding: 0px;
-    gap: 19px;
-    position: absolute;
-    width: 242px;
-    height: 50px;
-    left: 250px;
-    top: 73px;
-  }
-  nav{
-    background-color: #292929;
-    background:white;
-    height: 80px;
-    width: 100%;
-    vertical-align: top;
-  }
-  nav ul{
-    display: flex;
-    justify-content: space-between;
-    margin-right: auto;
-    width: 25%;
-    float: right;
-    margin-right: 20px;
-    line-height: 20px;
-  }
-  nav ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  nav ul li a{
-    text-align: center;
-    color: #1E1E1E;
-    font-size: 40px;
-    padding: 7px 13px;
-    border-radius: 3px;
-  }
-  body{
-    background-color: #292929;
-    background:white;
-    height: 80px;
-    width: 100%;
-    vertical-align: top;
-  }
-  body ul{
-    display: flex;
-    justify-content: space-between;
-    margin-right: auto;
-    width: 25%;
-    float: right;
-    margin-right: 20px;
-    line-height: 20px;
-  }
-  body ul li{
-    display: inline-block;
-    line-height: 80px;
-    margin: 0 5px;
-  }
-  body ul li a{
-    text-align: center;
-    color: #1E1E1E;
-    font-size: 17px;
-    padding: 7px 13px;
-    border-radius: 3px;
-  }
-  h1{
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 700;
-    font-size: 45px;
-    line-height: 61px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.05em;
-  }
-  h2{
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 500;
-    font-size: 36px;
-    line-height: 49px;
-    display: flex;
-    align-items: center;
-    letter-spacing: 0.05em; 
-  }
-  h3{
-    font-family: 'Satoshi';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-    display: flex;
-    align-items: center;
-    text-decoration-line: underline;
-  }
-  p{
-    display: flex;
-    align-items: center;
-    flex-wrap: wrap;
-    flex-direction: column;
-    font-family: Satoshi;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 30px;
-    line-height: 40px;
-  }
-  content{
-    width: 500px;
-    margin: 0 auto;
-  }
-  body{
-    display: flex;
-    flex-wrap: wrap;
-  }
+.logo {
+  font-family: 'Imbue';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 105px;
+  line-height: 126px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #F4B47C;
+  height: 50px;
+}
+
+.nav-btns {
+  display: flex;
+  height: 50px;
+}
+
+.portfolio-btn,
+.services-btn,
+.profile-btn,
+.contact-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px;
+  background: #292929;
+  border: 1px solid #153B50;
+  box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
+  border-radius: 30px;
+  font-family: Satoshi;
+}
+
+
+.about {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: fit-content;
+  background-color: white;
+  padding: 10px;
+}
+
+.heroText {
+  display: flex;
+  flex: auto;
+  width: 30%;
+  height: auto;
+  color: black;
+  padding-left: 100px;
+}
+
+.skills {
+  color: black;
+  display: flex;
+  float: right;
+  padding-left: 5%;
+}
+.qual {
+  color: black;
+  display: flex;
+  float: left;
+  padding-left: 5%;
+}
+
+.daysoff {
+  color: black;
+  display: flex;
+  float: right;
+  padding-left: 5%;
+}
+
+.offdays {
+  color: black;
+  display: flex;
+  float: right;
+  padding-left: 5%;
+}
+
+.img-container {
+  display: flex;
+  justify-content: baseline;
+}
+.card1 {
+  display: flex;
+  background-color: black;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.card2 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  width: 75%;
+  height: 25%;
+  margin: 10px;
+  padding: 100px 10px 30px 10px;
+  border-radius: 20px;
+}
+
+.card3 {
+  display: flex;
+  background-color: black;
+  height: auto;
+  flex-direction: column;
+  align-items: center;
+  margin: 0 auto;
+  padding-top: 20px;
+}
+
+.card4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  background-color: white;
+  width: 75%;
+  height: 25%;
+  margin: 10px;
+  padding: 100px 10px 30px 10px;
+  border-radius: 20px;
+}
+
+.casestudytext {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 35%;
+  align-items: flex-start;
+  padding-left: 40px;
+}
+
+.casestudybutton {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 16px 28px;
+  gap: 12px;
+  background: linear-gradient(45deg, #101828 0%, #475467 100%);
+  border: 1px solid #000000;
+  box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
+  border-radius: 8px;
+}
+
+.casestudyimg1 {
+  display: flex;
+  float: right;
+}
+.casestudyimg2 {
+  display: flex;
+  float: left;
+}
+.casestudyimg3 {
+  display: flex;
+  float: right;
+}
+.casestudyimg4 {
+  display: flex;
+  float: left;
+}
+.mockBox {
+  width: 50%;
+  object-fit: contain;
+  padding-bottom: 50px
+}
+
+.mockBoxRight {
+  width: 50%;
+  object-fit: contain;
+  padding-left: 100px;
+  padding-bottom: 50px;
+}
+
+.footer {
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+  font-family: "Satoshi";
+  font-size: 18px;
+}
+
+h1{
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 45px;
+  line-height: 61px;
+  letter-spacing: 0.05em;
+}
+h2{
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 54px;
+  letter-spacing: 0.05em; 
+}
+h3{
+  font-family: 'Satoshi';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}
+p{
+  font-family: Satoshi;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 40px;
+}
