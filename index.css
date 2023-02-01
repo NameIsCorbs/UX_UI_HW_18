@@ -8,6 +8,7 @@
   --radius: 8px;
 }
 
+
 .navbar {
   box-sizing: border-box;
   background: #292929;
@@ -21,20 +22,45 @@
 
 .logo {
   font-family: 'Imbue';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 105px;
-  line-height: 126px;
+  font-style: bold;
+  font-weight: 50px;
+  font-size: 75px;
+  letter-spacing: 4px;
+  line-height: 10px;
   display: flex;
   align-items: center;
   text-align: center;
   color: #F4B47C;
+}
+
+.social-icons {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  list-style: none;
+  color: white;
+  padding: 5px;
+  padding: 0;
+  margin: 5px;
+  max-width: fit-content;
+  max-height: fit-content;
+}
+
+.social-icons li {
+  display: inline;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
+  width: 50px;
   height: 50px;
 }
 
 .nav-btns {
   display: flex;
-  height: 50px;
+  justify-content: flex-end;
+  align-items: center;
+  margin-left: auto;
 }
 
 .portfolio-btn,
@@ -44,7 +70,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  padding: 16px;
+  padding: 10px;
   background: #292929;
   border: 1px solid #153B50;
   box-shadow: 4px 4px 4px rgba(0, 0, 0, 0.3);
@@ -56,9 +82,9 @@
 .about {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  flex-direction: row;
   width: 100%;
-  height: fit-content;
-  background-color: white;
   padding: 10px;
 }
 
@@ -67,44 +93,42 @@
   flex: auto;
   width: 30%;
   height: auto;
-  color: black;
   padding-left: 100px;
 }
 
 .skills {
-  color: black;
   display: flex;
   float: right;
   padding-left: 5%;
 }
 .qual {
-  color: black;
   display: flex;
   float: left;
   padding-left: 5%;
 }
 
 .daysoff {
-  color: black;
   display: flex;
   float: right;
   padding-left: 5%;
 }
 
 .offdays {
-  color: black;
   display: flex;
   float: right;
   padding-left: 5%;
 }
 
 .img-container {
-  display: flex;
-  justify-content: baseline;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  grid-gap: 10px;
+  padding-inline: 10px;
 }
+
 .card1 {
   display: flex;
-  background-color: black;
   height: auto;
   flex-direction: column;
   align-items: center;
@@ -116,7 +140,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: white;
   width: 75%;
   height: 25%;
   margin: 10px;
@@ -126,7 +149,6 @@
 
 .card3 {
   display: flex;
-  background-color: black;
   height: auto;
   flex-direction: column;
   align-items: center;
@@ -138,7 +160,6 @@
   display: flex;
   justify-content: space-between;
   align-items: flex-end;
-  background-color: white;
   width: 75%;
   height: 25%;
   margin: 10px;
@@ -163,9 +184,10 @@
   padding: 16px 28px;
   gap: 12px;
   background: linear-gradient(45deg, #101828 0%, #475467 100%);
-  border: 1px solid #000000;
+  border: 1px solid white;
   box-shadow: 0px 1px 2px rgba(16, 24, 40, 0.05);
-  border-radius: 8px;
+  border-radius: 30px;
+  color: white;
 }
 
 .casestudyimg1 {
@@ -184,24 +206,13 @@
   display: flex;
   float: left;
 }
-.mockBox {
-  width: 50%;
-  object-fit: contain;
-  padding-bottom: 50px
-}
-
-.mockBoxRight {
-  width: 50%;
-  object-fit: contain;
-  padding-left: 100px;
-  padding-bottom: 50px;
-}
 
 .footer {
   color: white;
   display: flex;
   justify-content: space-between;
   background-color: black;
+  text-align: center;
 }
 
 a {
@@ -240,4 +251,9 @@ p{
   font-weight: 400;
   font-size: 30px;
   line-height: 40px;
+}
+body {
+  margin: 20px 170px 20px 170px;
+  background-color: #292929;
+  color: #F1E7D6;
 }
